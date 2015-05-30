@@ -2,8 +2,8 @@
 0    # a1 - first age
 14   # a2 - last (plus group) age
 2011 # y1 - first year of simulation (normally the assessment year)
-2020 # y2 - last year of simulation
-99   # iter - numer of iterations (usually something larger than 999)
+2051 # y2 - last year of simulation
+1000 # iter - numer of iterations (usually something larger than 999)
 5    # f1 - lower age in fishing mortality calculation
 10   # f2 - upper age in fishing mortality calculation
 1    # nR - number age classes with unknown recruits
