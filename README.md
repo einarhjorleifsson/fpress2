@@ -12,7 +12,6 @@ Here a quick overview is provided on how the functional routines are set up (bes
 
 * Read in the control file:
 
-
 ```r
 library(fpress2)
 file <-  paste(path.package("fpress2"),'extdata/hcr_iCod.ctr',sep='/')
