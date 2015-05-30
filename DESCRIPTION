@@ -1,0 +1,20 @@
+Package: fpress2
+Type: Package
+Title: A collection functions for hcr evaluation
+Version: 0.0.1.9000
+Date: 2015-05-30
+Authors@R: person("Einar", "Hjorleifsson", email = "einarhjorleifsson@gmail.com",
+  role = c("aut", "cre"))
+Description: Miscalaneous functions, ..
+Depends:
+  R (>= 3.1.0)
+Imports:
+  ggplot2,
+  plyr,
+  reshape2
+License: GPL (>= 2)
+LazyData: TRUE
+URL: http://github.com/einarhjorleifsson/fpress2
+BugReports: http://github.com/einarhjorleifsson/fpress2/issues
+Suggests: knitr
+VignetteBuilder: knitr
