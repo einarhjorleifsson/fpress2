@@ -52,6 +52,7 @@ hcr_set_dimensions <- function(ctr) {
       year=y1:y2,
       hrate=HRATE,
       iter=1:iter))
+
   d$N <- d$tF <- d$M <- d$pM <- d$pF <- d$selF <- d$selD <- d$selB <- d$C <- d$cW  <-
     d$sW <- d$cvcW <- d$cvsW <- d$mat  <- x
 
@@ -152,7 +153,7 @@ hcr_set_wgtErrors <- function(d,ctr)
   for (y in 2:n_years) x[y,] <- ctr$w_rho * x[y-1,] + sqrt(1 - ctr$w_rho^2) * x[y,]
 
   for (a in 1:n_ages) {
-    for (h in 1:n_hrates) d[a,,h,] <- x * ctr$cW_cv[a]
+    for (h in 1:n_hrates) d[a,,h,] <- x * ctr$w_cv[a]
   }
 
   return(d)
@@ -229,7 +230,8 @@ hcr_read_startfile <- function(file) {
 
   d <- list()
 
-  indata    <- matrix(scan(file,0,quiet=TRUE),ncol=18,byrow=TRUE)
+  indata    <- read.table(file, header = TRUE, sep = "\t")
+
   d$age     <- indata[,1]     # age classes
   d$N       <- indata[,2]     # population (000s)
   d$N_cv    <- indata[,3]     # population cv
