@@ -171,20 +171,20 @@ head(dat)
 ```
 
 ```
-##   year iter target         r       bio       ssb           f          hr
-## 1 2011    1  1e-05 168.82693  976.0461  367.2564 0.276830505 0.174120501
-## 2 2012    1  1e-05 142.05473 1146.1236  426.7638 0.252061869 0.156998900
-## 3 2013    1  1e-05  89.67864 1326.2512  526.4838 0.103201440 0.067804126
-## 4 2014    1  1e-05 165.80999 1513.5953  715.4180 0.039716563 0.029664268
-## 5 2015    1  1e-05  92.97601 1810.1885  954.5963 0.015602114 0.012357487
-## 6 2016    1  1e-05  86.07112 2011.9112 1173.1321 0.006616924 0.005515067
+##   year iter target         r       bio      ssb           f          hr
+## 1 2011    1  1e-05 162.62473  968.5378 364.0465 0.279262313 0.175470884
+## 2 2012    1  1e-05 122.16645 1067.8713 393.6661 0.273053986 0.168508815
+## 3 2013    1  1e-05 134.02259 1148.3335 448.7068 0.120647640 0.078317856
+## 4 2014    1  1e-05 146.72300 1355.6536 631.9191 0.044747587 0.033127229
+## 5 2015    1  1e-05  88.65446 1467.8873 768.2711 0.019361016 0.015256566
+## 6 2016    1  1e-05 114.01010 1653.9920 973.5415 0.007985431 0.006725481
 ##       yield
-## 1 169.94964
-## 2 179.94015
-## 3  89.92530
-## 4  44.89970
-## 5  22.36938
-## 6  11.09583
+## 1 169.95018
+## 2 179.94573
+## 3  89.93502
+## 4  44.90905
+## 5  22.39492
+## 6  11.12389
 ```
 
 
@@ -252,7 +252,7 @@ ggplot(dat[dat$year %in% 2040:2049,],aes(target,ssb)) +
 
 ![](README_files/figure-html/unnamed-chunk-14-1.png) 
 
-\section{On coding error structures}
+#### On coding error structures
 
 In the current version error structures are only available for recruitement, weights at age and assessment error. For those, the error structure can be either normal og lognormal. All provide a switch option to include autocorrelation, something that one should consider as default for all stocks unless proven to be of pure random nature.
 
