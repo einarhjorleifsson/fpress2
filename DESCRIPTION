@@ -1,6 +1,6 @@
 Package: fpress2
 Type: Package
-Title: A collection functions for hcr evaluation
+Title: A collection functions for  hcr evaluation
 Version: 0.0.1.9000
 Date: 2015-05-30
 Authors@R: person("Einar", "Hjorleifsson", email = "einarhjorleifsson@gmail.com",
