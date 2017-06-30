@@ -1,8 +1,8 @@
 Package: fpress2
 Type: Package
 Title: A collection functions for  hcr evaluation
-Version: 0.0.1.9000
-Date: 2015-05-30
+Version: 0.0.2
+Date: 2017-06-30
 Authors@R: person("Einar", "Hjorleifsson", email = "einarhjorleifsson@gmail.com",
   role = c("aut", "cre"))
 Description: Miscalaneous functions, ..
@@ -18,3 +18,4 @@ URL: http://github.com/einarhjorleifsson/fpress2
 BugReports: http://github.com/einarhjorleifsson/fpress2/issues
 Suggests: knitr
 VignetteBuilder: knitr
+RoxygenNote: 6.0.1
